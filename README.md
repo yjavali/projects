@@ -1,4 +1,3 @@
-# projects
 # **My Professional Projects**
 
 Welcome to my projects repository!
