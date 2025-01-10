@@ -75,21 +75,11 @@ Acknowledging the dynamic nature of cyber threats, the study assumes the positio
 
 ### **System Architecture**
 
-#### Logical Architecture Diagram
-This diagram illustrates the interactions between multiple cloud platforms and system components, highlighting:
-- Data processing flow across AWS, Azure, and GCP.
-- Encrypted data exchange between platforms.
-- Integration of linear regression computation and decryption mechanisms.
-
-![Logical Architecture Diagram](https://placeholder-url-for-logical-architecture)
-
----
-
-### **System Architecture**
-
 Below is the **Logical Architecture Diagram** illustrating the interactions between components across multiple cloud platforms:
 
-![Logical Architecture Diagram](https://drive.proton.me/urls/RKN17SHN4W#NmZWLcfasG5a)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0db38887-1b49-41eb-808a-0312c000a22a" alt="Logical Architecture Diagram">
+</div>
 
 #### Key Highlights:
 1. **Data Processing on AWS:** Encrypted data from MariaDB is preprocessed and distributed securely to other cloud environments.
@@ -100,19 +90,9 @@ Below is the **Logical Architecture Diagram** illustrating the interactions betw
 
 ### **Key Management System**
 
-#### Key Management System Diagram
-This diagram depicts the secure handling of encryption keys, including:
-- Public and private key distribution across platforms.
-- Role-based access controls to enforce key security.
-- Integration of relinearisation keys for polynomial computation efficiency.
-
-![Key Management System Diagram](https://placeholder-url-for-key-management)
-
----
-
-### **Key Management System**
-
-![Key Management System Diagram](https://drive.proton.me/urls/RKN17SHN4W#NmZWLcfasG5a)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/fe9b84da-a225-4ff4-9ef9-5145e6ddc33b" alt="Key Management System Diagram">
+</div>
 
 The **Key Management System (KMS)** ensures robust encryption key handling:
 - **Public Key Distribution:** Securely shared across AWS and Azure for encryption.
