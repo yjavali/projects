@@ -2,13 +2,11 @@
 
 ## **Introduction**
 
-This project, completed on **April 21, 2024**, aims to enhance the cryptographic security of sensitive data assets for St. John’s Clinic, a client of MediTech Solutions. By integrating robust encryption mechanisms, authentication frameworks, and key management strategies, the project secures systems such as MedRecords, FinCare, and the Electronic Prescribing System.
+This project, completed on **April 21, 2024**, aims to enhance the cryptographic security of sensitive data assets for a leading UK Clinic. By integrating robust encryption mechanisms, authentication frameworks, and key management strategies, the project secures systems such as Medical Records, Payment Service, Electronic Prescribing System and the Intellectual Property Sharing.
 
 The cryptographic simulations were performed using **CrypTool**, a comprehensive platform for cryptographic learning and experimentation.
 
-The complete project is available at the following secure link:  
-[Access Complete Project](https://drive.proton.me/urls/AYTH0QN80R#WgadLSyy85NB).  
-The document is password-protected. To request access, please email the author, **Yashas Javali**, stating your purpose. A secure password will be shared upon approval.
+The complete project is available at the following secure link: [Access Complete Project](https://drive.proton.me/urls/AYTH0QN80R#WgadLSyy85NB). The document is password-protected. To request access, please email the author, **Yashas Javali**, stating your purpose. A secure password will be shared upon approval.
 
 ---
 
@@ -60,11 +58,11 @@ The document is password-protected. To request access, please email the author, 
 ## **Proposed Cryptographic Architecture**
 
 The simulation was designed and implemented using CrypTool, highlighting cryptographic workflows for various healthcare services:
-1. **MedRecords:**
+1. **Medical Records:**
    - Key Derivation: HKDF-SHA256.
    - Integrity: HMAC-SHA256.
    - Storage: Field-level encrypted database.
-2. **FinCare:**
+2. **Payment Service:**
    - Key Derivation: HKDF-SHA256.
    - Integrity: Digital Signature with RSA-2048.
    - Storage: Encrypted database.
