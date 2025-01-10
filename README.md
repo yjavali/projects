@@ -57,16 +57,16 @@ Each project is documented in its respective markdown file in the `details/` dir
 |-- README.md              # Overview of this repository
 |-- LICENSE.md             # Licensing information
 |-- details/              # Folder containing project details
-    |-- enhancing_data_privacy_in_ecommerce.md
+    |-- azure_chatbot_customer_interaction.md  
     |-- comprehensive-cybersecurity-framework-smart-grids.md
     |-- cryptographic_security_healthcare_data.md
-    |-- sim_swap_vulnerabilities_mfa.md
+    |-- digital_forensics_expert_witness.md
+    |-- ecommerce_website_hosting_azure.md
+    |-- enhancing_data_privacy_in_ecommerce.md
+    |-- iot_monitoring_lettuce_cultivation.md
     |-- risk_analysis_mitigation_iomt_healthcare.md
     |-- secure_corporate_network.md
-    |-- digital_forensics_expert_witness.md
-    |-- iot_monitoring_lettuce_cultivation.md
-    |-- ecommerce_website_hosting_azure.md
-    |-- azure_chatbot_customer_interaction.md
+    |-- sim_swap_vulnerabilities_mfa.md
     |-- vehicle_to_pedestrian_communication_cloud.md
     |-- text_to_braille_transcription_ocr.md
 ```
