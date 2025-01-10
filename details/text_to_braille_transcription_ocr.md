@@ -1,4 +1,4 @@
-# Project: Transcriber for Visually Impaired
+# Real-Time Text-to-Braille Transcription System Using Image Recognition and OCR
 
 ## **Overview**
 
@@ -6,7 +6,7 @@
 To design and implement a device that captures printed text and converts it into Braille script, enabling visually impaired individuals to access information more effectively.
 
 **Specialist Field:** Assistive Technologies  
-**Submission Date:** Academic Year 2018-2019  
+**Duration:** July 2018 - December 2018  
 
 The project was conceived to address the challenges faced by visually impaired individuals in accessing printed text. The Transcriber device bridges the gap by enabling real-time conversion of printed material into Braille, using advanced image processing and embedded systems.
 

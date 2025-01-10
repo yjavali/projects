@@ -1,4 +1,4 @@
-# Project: Vehicle to Pedestrian Adaptive Communication for Collision Prevention
+# Vehicle-to-Pedestrian Adaptive Communication System Using Cloud-Based Architecture
 
 ## **Overview**
 
@@ -6,7 +6,7 @@
 To develop a centralised system that alerts pedestrians on their smartphones and drivers on an onboard unit (OBU) about potential collision risks. The system is designed to be cost-effective, accurate, robust, and quick to respond, reducing pedestrian fatalities and enhancing road safety.
 
 **Specialist Field:** Embedded Systems and Vehicular Communication  
-**Submission Date:** Academic Year 2018-2019  
+**Submission Date:** January 2019 - May 2019  
 
 The project tackles the increasing pedestrian fatalities in India by introducing a communication system that proactively alerts both pedestrians and drivers, thereby enabling timely corrective action to prevent collisions.
 
