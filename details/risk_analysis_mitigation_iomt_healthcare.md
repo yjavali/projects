@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-This project investigates the vulnerabilities and risks associated with Internet of Medical Things (IoMT) devices in healthcare delivery organisations (HDOs). The study focuses on establishing a robust **Governance, Risk, and Compliance (GRC)** framework while addressing the security requirements under **Information Security Management Systems (ISMS)**. The project incorporates international standards, regulatory compliance, and practical risk mitigation strategies for a secure IoMT ecosystem.
+This project investigates the vulnerabilities and risks associated with Internet of Medical Things (IoMT) devices in healthcare delivery organisations (HDOs). The focus is on implementing robust **Governance, Risk, and Compliance (GRC)** frameworks and adhering to international standards for security and risk management. The project also proposes practical controls to mitigate risks while ensuring compliance with regulatory requirements.
 
 The complete project is available at the following secure link: [Access Complete Project](https://drive.proton.me/urls/KWTEHB22NC#7DxwFHp3l5GE). The document is password-protected. To request access, please email the author, **Yashas Javali**, stating your purpose. A secure password will be shared upon approval.
 
@@ -10,120 +10,110 @@ The complete project is available at the following secure link: [Access Complete
 
 ## **Governance and Compliance Framework**
 
-### **Applicable Standards and Frameworks**
+### **Key Standards for IoMT Devices**
+
 1. **IEC 80001-1:2021**  
-   - Establishes a lifecycle risk management approach for IT networks incorporating IoMT devices.
-   - Emphasises collaboration between stakeholders via a designated Medical IT Network (MITN) Risk Manager.
+   - Focus: Lifecycle risk management for IT networks integrating medical devices.
+   - Emphasises identifying hazards, evaluating associated risks, and implementing controls.
+   - Designates a **Medical IT Network Risk Manager** responsible for stakeholder collaboration.
 
 2. **ISO/IEC 27001:2022**  
-   - Provides guidelines for establishing and maintaining an ISMS for IoMT devices.
-   - Includes control domains such as access management, incident response, and continuous monitoring.
+   - Focus: Establishing and maintaining an Information Security Management System (ISMS).
+   - Includes 93 controls across 14 domains, covering access management, cryptographic controls, and incident management.
+   - Requires continuous monitoring and periodic audits.
 
-3. **GDPR and Data Protection Act (DPA):**  
-   - Ensures data privacy and protection, focusing on Article 32 requirements for securing sensitive health data.
+3. **NIST Cybersecurity Framework (CSF)**  
+   - Focus: Providing a flexible framework for managing cybersecurity risks.
+   - Five core functions: Identify, Protect, Detect, Respond, Recover.
+   - Encourages a risk-based approach tailored to IoMT-specific needs.
 
-4. **OWASP Secure Medical Device Deployment Standard v2.0**  
-   - Recommends secure deployment practices, including firmware updates, secure configuration, and encrypted communication.
+4. **GDPR and Data Protection Act (DPA)**  
+   - Focus: Ensuring data privacy and security for personal health information (PHI).
+   - Article 32 mandates encryption and pseudonymisation for data protection.
 
----
-
-## **Risk Analysis and Information Security**
-
-### **Risk Register and Vulnerability Assessment**
-A detailed risk register was developed, highlighting vulnerabilities and proposed mitigations for IoMT devices:
-
-| **Device**                          | **Risk**                       | **Impact (C-I-A)**        | **Mitigation Strategies**                                                  |
-|-------------------------------------|--------------------------------|---------------------------|-----------------------------------------------------------------------------|
-| Welch Allyn Connex Central Station | Firmware tampering             | Critical                  | Enable secure boot, network segmentation, and apply regular patches.       |
-| MiniMed Insulin Pump                | Authentication bypass          | High                      | Enforce RBAC, remove default credentials, and implement encrypted sessions.|
-| Medtronic MyCareLink                | Unencrypted communication      | Critical                  | Use TLS 1.3, apply secure firmware updates, and configure secure VPNs.     |
-| Natus EEG with NeuroWorks           | Buffer overflow                | Critical                  | Implement secure coding practices, apply DEP, and use IDS for detection.   |
+5. **OWASP Secure Medical Device Deployment Standard v2.0**  
+   - Focus: Secure configuration and deployment of IoMT devices.
+   - Recommends vulnerability scanning, segmentation, and encrypted communication.
 
 ---
 
-### **Threat Modelling and STRIDE Analysis**
-1. **Spoofing:**  
-   - Attackers impersonate legitimate devices to inject malicious commands.
-   - Mitigation: Two-way authentication and mutual TLS for secure connections.
-   
-2. **Tampering:**  
-   - Firmware or configuration tampering leads to unauthorised behaviour.  
-   - Mitigation: Implement cryptographic hashes for integrity validation.
+## **Risk Analysis and Standards-Based Controls**
 
-3. **Denial of Service (DoS):**  
-   - Overloading IoMT device networks disrupts healthcare delivery.  
-   - Mitigation: Apply rate-limiting, network redundancy, and IDS.
+### **Risk Register**
 
-4. **Information Disclosure:**  
-   - Interception of unencrypted health data during transmission.  
-   - Mitigation: Enforce end-to-end encryption (AES-256, TLS 1.3).
-
-5. **Elevation of Privilege:**  
-   - Exploiting software vulnerabilities for unauthorised access.  
-   - Mitigation: Enforce role-based access controls and apply regular patching.
+| **Device**                                      | **Version**           | **CVE**         | **Vulnerability**               | **Impact**        | **Mitigation Strategies**                                                      |
+|-------------------------------------------------|-----------------------|-----------------|---------------------------------|-------------------|---------------------------------------------------------------------------------|
+| Welch Allyn Connex Central Station (CS)        | v1.1                 | CVE-2021-27410  | Out-of-bounds Write             | Critical (C-I-A) | Implement DEP, VLAN segmentation, VPN access, and proactive monitoring.       |
+| MiniMed Paradigm Veo 554/754 Pumps             | v2.6A                | CVE-2019-10964  | Improper Authentication         | High (C-I-A)     | Apply physical controls, data obfuscation, and disconnect unused connections. |
+| Medtronic MyCareLink (MCL) Smart Model 25000   | v2.0                 | CVE-2020-25187  | Heap Overflow                   | Critical (C-I-A) | Regular patching, physical security, and proactive monitoring.                |
+| Natus EEG with NeuroWorks                     | v8                    | CVE-2017-2853   | Stack Buffer Overflow           | High (C-I-A)     | Limit network exposure, use segmentation, and ensure VPN-only connections.    |
+| Dickinson BD Alaris Plus Medical Syringe Pumps | v2.3.6               | CVE-2018-14786  | Improper Authentication         | Critical (C-I-A) | VLAN segmentation, VPN access, and strict firewall controls.                  |
 
 ---
 
-## **Proposed Mitigation Strategies**
+### **Controls Based on Standards**
 
-### **Governance Controls**
-- **Policy Development:**  
-  Establish IoMT-specific cybersecurity policies, integrating incident response protocols and regular audits.
-- **Security Audits:**  
-  Perform regular vulnerability scans and penetration tests to identify gaps.
+#### **Governance Controls**
+- **Policy Framework:**  
+  Align organisational policies with IEC 80001-1 to manage risks across the IoMT device lifecycle.  
+- **Audit and Compliance:**  
+  Conduct regular audits to ensure adherence to GDPR, NIST CSF, and ISO/IEC 27001 standards.
 
-### **Access and Identity Management**
-- Enforce **Role-Based Access Control (RBAC)** aligned with the Principle of Least Privilege.
-- Use multi-factor authentication (MFA) for administrative access, incorporating biometric methods for high-risk actions.
+#### **Access Management**
+- **RBAC Implementation:**  
+  Define roles based on device functionality and enforce least privilege access.
+- **Authentication:**  
+  Implement MFA for administrative access, with support for biometrics.
 
-### **Data Protection Measures**
-- **Encryption Standards:**  
-  - Apply AES-256 for data at rest.
-  - Use TLS 1.3 for secure transmission, preventing eavesdropping and replay attacks.
-- **Data Loss Prevention (DLP):**  
-  - Implement DLP solutions to monitor and prevent unauthorised data exfiltration.
+#### **Cryptographic Controls**
+- **Data Encryption:**  
+  - AES-256 for data at rest.  
+  - TLS 1.3 for data in transit, ensuring protection against eavesdropping.  
+- **Integrity Validation:**  
+  Use HMAC-SHA256 to validate the integrity of critical communications.
 
----
+#### **Device Configuration and Deployment**
+- **Secure Boot:**  
+  Verify device integrity during boot using cryptographic signatures.  
+- **Firmware Updates:**  
+  Ensure signed firmware updates to prevent tampering.  
+- **Network Isolation:**  
+  Use VLAN segmentation and firewalls to isolate devices from critical infrastructure.
 
-## **Information Security Incident Management**
+#### **Monitoring and Detection**
+- **Intrusion Detection Systems (IDS):**  
+  Deploy IDS tailored to IoMT traffic for anomaly detection.  
+- **SIEM Integration:**  
+  Use SIEM tools for centralised monitoring and incident response.
 
-### **Incident Response Planning**
-1. **Preparation:**  
-   - Maintain an inventory of IoMT devices and associated vulnerabilities.  
-   - Configure Security Information and Event Management (SIEM) systems for proactive monitoring.
-
-2. **Detection and Containment:**  
-   - Deploy IDS/IPS to detect and mitigate abnormal activity in real-time.  
-   - Isolate impacted devices using VLANs and segment critical networks.
-
-3. **Recovery:**  
-   - Conduct root cause analysis and apply corrective measures.  
-   - Restore device functionality through verified backups and firmware integrity checks.
+#### **Incident Management**
+- Develop a robust incident response plan (aligned with ISO/IEC 27035), including detection, containment, and recovery phases.  
+- Conduct mock incident simulations to enhance preparedness.
 
 ---
 
 ## **Learning Outcomes**
 
-1. Gained expertise in aligning IoMT device risk management with IEC 80001 and ISO/IEC 27001 frameworks.
-2. Enhanced skills in threat modelling using STRIDE and developing actionable risk registers.
-3. Strengthened understanding of secure deployment practices and regulatory compliance.
-4. Improved incident response planning and recovery strategies tailored to healthcare environments.
+1. Strengthened understanding of governance frameworks (IEC 80001, ISO/IEC 27001) and their practical application to IoMT devices.
+2. Gained expertise in developing standards-based controls to address IoMT risks.
+3. Enhanced skills in integrating monitoring, incident management, and regulatory compliance for healthcare environments.
+4. Improved proficiency in cryptographic controls and secure device configuration.
 
 ---
 
 ## **Conclusion and Future Scope**
 
-This project establishes a robust governance and risk management framework for securing IoMT devices in healthcare. By combining technical mitigations and organisational policies, healthcare delivery organisations can safeguard sensitive data and enhance patient safety.
+The project underscores the critical importance of standards-based governance and technical controls in mitigating IoMT device risks. Implementing compliance-driven frameworks ensures both security and operational efficiency.
 
 ### **Future Directions**
-1. **AI-Based Threat Detection:**  
-   - Leverage machine learning models for real-time anomaly detection and proactive threat responses.
+1. **AI-Driven Monitoring:**  
+   Develop advanced anomaly detection systems using AI to enhance real-time threat detection.
 
-2. **Blockchain Integration:**  
-   - Use decentralised ledgers for secure data sharing and access management.
+2. **Post-Quantum Security:**  
+   Prepare IoMT devices for quantum-resilient cryptographic standards.
 
-3. **Post-Quantum Cryptography:**  
-   - Prepare IoMT devices for quantum-resistant encryption protocols to ensure long-term security.
+3. **IoMT Device Certification Programs:**  
+   Promote certification standards for IoMT devices, ensuring secure development and deployment practices.
 
 ---
 
