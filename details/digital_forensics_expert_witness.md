@@ -2,7 +2,7 @@
 
 ## **Disclaimer:**  
 
-The case details and all characters mentioned in this document are fictional and anonymised wherever possible for educational and illustrative purposes. Specific names and identifiable details have been replaced with generic terms. 
+**The case details and all characters mentioned in this document are fictional and anonymised wherever possible for educational and illustrative purposes. Specific names and identifiable details have been replaced with generic terms.**
 
 ---
 
@@ -10,7 +10,7 @@ The case details and all characters mentioned in this document are fictional and
 
 This project involves a comprehensive digital forensics investigation conducted for the court case **Rex v. Djanko**, focusing on allegations of assault and narcotics distribution. The investigation adhered to strict forensic principles, ensuring evidence integrity, chain of custody, and admissibility in court. The analysis utilised industry-standard tools to extract, process, and interpret data from seized digital devices.
 
-The complete report is available at the following secure link: [Access Complete Report](https://drive.proton.me/urls/RKN17SHN4W#NmZWLcfasG5a). The document is password-protected. To request access, please email the author, **Yashas Javali**, stating your purpose. A secure password will be shared upon approval.
+The complete forensic report, containing detailed findings and supplemental analysis, is available at the following secure link: [Access Complete Report](https://drive.proton.me/urls/RKN17SHN4W#NmZWLcfasG5a). This document is password-protected. To request access, please email the author, **Yashas Javali**, providing a detailed purpose for access. A secure password will be shared upon approval.
 
 ---
 
@@ -73,7 +73,7 @@ The complete report is available at the following secure link: [Access Complete 
 
 #### **Network Traffic and Emails**
 - **Emails Recovered:**
-  - Communications between `PaulD` and `Stuart Tchaikomsiva` discussed logistics for drug drops.
+  - Communications between `PaulD` and `StuartT` discussed logistics for narcotics drops.
 - **Network Logs:**
   - VPN traffic correlated with timestamps of sensitive email exchanges, indicating secure communication channels.
 
@@ -88,7 +88,7 @@ The complete report is available at the following secure link: [Access Complete 
    - GPS metadata from the dashcam confirmed the suspect’s vehicle was at the crime scene during the alleged assault.
 
 3. **Evidence of Narcotics Distribution:**
-   - Email content and search history indicated systematic drug sourcing and delivery methods.
+   - Email content and search history indicated systematic narcotic sourcing and delivery methods.
    - Metadata revealed encrypted documents likely containing critical evidence.
 
 4. **Attempts to Obfuscate Data:**
@@ -112,6 +112,8 @@ The complete report is available at the following secure link: [Access Complete 
 - **Hash Validation:** Ensured integrity of forensic images using MD5 and SHA1 hashes.
 - **Metadata Correlation:** Cross-referenced GPS data from dashcam with timestamps of emails and file access.
 
+**Note:** All tools and processes complied with **ISO/IEC 27037** standards for digital evidence handling and analysis, ensuring admissibility and accuracy in findings.
+
 ---
 
 ## **Legal and Admissibility Aspects**
@@ -123,11 +125,7 @@ The complete report is available at the following secure link: [Access Complete 
    - Hash values (MD5 and SHA1) verified for forensic images, demonstrating evidence integrity.
    - Processes adhered to **Daubert Standards**, ensuring reliability in methodology and analysis.
 
-3. **Rights of the Accused:**
-   - Privacy rights of the suspect were respected during the acquisition and handling of personal data.
-   - Evidence collection remained within the scope of the search warrant.
-
-4. **Limitations in Decryption:**
+3. **Limitations in Decryption:**
    - Encrypted files remain inaccessible due to advanced password protection, but their existence corroborates other findings.
 
 ---
@@ -158,22 +156,13 @@ The complete report is available at the following secure link: [Access Complete 
 
 ---
 
-## **Conclusion and Recommendations**
+## **Conclusion**
 
-### **Conclusion**
 The investigation successfully uncovered:
 1. A direct connection between the suspect and the victim.
 2. Evidence of the suspect’s presence at the crime scene.
 3. Substantial indications of narcotics distribution activities.
 4. Attempts to conceal critical evidence through encryption and deletion.
-
-### **Recommendations**
-1. **Advanced Decryption Efforts:**  
-   Leverage cloud computing resources for password recovery on encrypted files.
-2. **Automation in Metadata Processing:**  
-   Deploy AI-based tools for faster and more accurate artifact analysis.
-3. **Operational Guidelines:**  
-   Establish a centralised digital evidence repository with role-based access controls for efficient case management.
 
 ---
 
