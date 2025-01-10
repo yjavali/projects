@@ -144,8 +144,8 @@ This project demonstrates the deployment of a WordPress website on Microsoft Azu
 
 **Author:** Yashas Javali  
 **Duration:** August 2019  
-**Specialisation:** Cloud Computing and Web Hosting  
-[O**Statement:** This project highlights expertise in cloud-based WordPress hosting, custom domain configuration, and scalable eCommerce platform deployment on Azure.
+**Specialisation:** Cloud Computing and Web Hosting 
+**Statement:** This project highlights expertise in cloud-based WordPress hosting, custom domain configuration, and scalable eCommerce platform deployment on Azure.
 
 ---
 
