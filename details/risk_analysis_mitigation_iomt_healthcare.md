@@ -51,44 +51,86 @@ The complete project is available at the following secure link: [Access Complete
 
 ---
 
-### **Controls Based on Standards**
+## **Controls Based on Standards**
 
-#### **Governance Controls**
-- **Policy Framework:**  
-  Align organisational policies with IEC 80001-1 to manage risks across the IoMT device lifecycle.  
-- **Audit and Compliance:**  
-  Conduct regular audits to ensure adherence to GDPR, NIST CSF, and ISO/IEC 27001 standards.
+### **Governance and Policy Controls**
+1. **Policy Framework:**  
+   - Develop IoMT-specific cybersecurity policies, ensuring they cover onboarding, maintenance, and decommissioning of devices (**IEC 80001-1**).
+   - Enforce regular policy updates to align with evolving compliance standards (**ISO/IEC 27001**).
 
-#### **Access Management**
-- **RBAC Implementation:**  
-  Define roles based on device functionality and enforce least privilege access.
-- **Authentication:**  
-  Implement MFA for administrative access, with support for biometrics.
+2. **Audit and Monitoring:**  
+   - Conduct quarterly compliance audits against GDPR Article 32 and ISO/IEC 27001 controls.
+   - Use risk assessment templates to evaluate vulnerabilities before deployment.
 
-#### **Cryptographic Controls**
-- **Data Encryption:**  
-  - AES-256 for data at rest.  
-  - TLS 1.3 for data in transit, ensuring protection against eavesdropping.  
-- **Integrity Validation:**  
-  Use HMAC-SHA256 to validate the integrity of critical communications.
+3. **Roles and Responsibilities:**  
+   - Assign a dedicated Medical IT Network Risk Manager to oversee risk management and stakeholder coordination (**IEC 80001-1**).
 
-#### **Device Configuration and Deployment**
-- **Secure Boot:**  
-  Verify device integrity during boot using cryptographic signatures.  
-- **Firmware Updates:**  
-  Ensure signed firmware updates to prevent tampering.  
-- **Network Isolation:**  
-  Use VLAN segmentation and firewalls to isolate devices from critical infrastructure.
+---
 
-#### **Monitoring and Detection**
-- **Intrusion Detection Systems (IDS):**  
-  Deploy IDS tailored to IoMT traffic for anomaly detection.  
-- **SIEM Integration:**  
-  Use SIEM tools for centralised monitoring and incident response.
+### **Access and Identity Management**
+1. **RBAC Implementation:**  
+   - Define granular roles for device users and administrators based on device functionality (**ISO/IEC 27001 A.9**).
+   - Enforce strict access rights to prevent privilege escalation attacks (**NIST CSF Protect**).
 
-#### **Incident Management**
-- Develop a robust incident response plan (aligned with ISO/IEC 27035), including detection, containment, and recovery phases.  
-- Conduct mock incident simulations to enhance preparedness.
+2. **Multi-Factor Authentication (MFA):**  
+   - Implement MFA for all administrative accounts, with biometric options for critical actions (**GDPR Article 32**).
+
+3. **Credential Security:**  
+   - Remove all default credentials from devices before deployment.
+   - Use strong, unique passwords managed through an enterprise-grade password manager (**OWASP Recommendations**).
+
+---
+
+### **Network Security Controls**
+1. **Segmentation and Isolation:**  
+   - Use VLANs to isolate IoMT devices from other critical systems, minimising lateral movement of attackers (**NIST CSF Protect**).
+   - Implement firewall rules to restrict communication between devices and untrusted networks.
+
+2. **Secure Remote Access:**  
+   - Require VPNs for all remote management sessions.
+   - Configure VPN access with device whitelisting to ensure only authorised endpoints can connect.
+
+3. **IDS and IPS Deployment:**  
+   - Deploy Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) tailored to monitor IoMT-specific traffic patterns (**ISO/IEC 27001 A.12**).
+
+---
+
+### **Cryptographic Controls**
+1. **Data Encryption:**  
+   - Use AES-256 for encrypting sensitive patient data at rest (**ISO/IEC 27001 A.18**).  
+   - Apply TLS 1.3 for all data transmitted between devices and backend systems (**NIST CSF Protect**).
+
+2. **Integrity Validation:**  
+   - Use HMAC-SHA256 to validate the integrity of firmware and configuration files during updates (**IEC 80001-1**).
+
+3. **Key Management:**  
+   - Store cryptographic keys in a hardware security module (HSM).
+   - Rotate encryption keys periodically to limit the impact of potential compromise (**ISO/IEC 27001 A.10**).
+
+---
+
+### **Device Configuration and Maintenance**
+1. **Secure Boot:**  
+   - Enable secure boot processes to ensure only trusted firmware and configurations are loaded (**OWASP**).
+
+2. **Firmware Updates:**  
+   - Implement digitally signed firmware updates to prevent tampering (**ISO/IEC 27001 A.14**).  
+   - Use automated tools to push updates and confirm their application.
+
+3. **Lifecycle Management:**  
+   - Apply secure decommissioning practices, ensuring all sensitive data is wiped from devices before disposal (**IEC 80001-1**).
+
+---
+
+### **Incident Management**
+1. **Incident Response Planning:**  
+   - Develop a detailed incident response plan aligned with ISO/IEC 27035, incorporating detection, containment, recovery, and root cause analysis.
+
+2. **Mock Incident Drills:**  
+   - Conduct bi-annual simulations to test the organisation’s readiness for IoMT-specific attacks.
+
+3. **SIEM Integration:**  
+   - Centralise monitoring through Security Information and Event Management (SIEM) systems for improved visibility and faster response times (**ISO/IEC 27001 A.16**).
 
 ---
 
