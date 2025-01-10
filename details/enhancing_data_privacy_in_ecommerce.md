@@ -77,7 +77,9 @@ Acknowledging the dynamic nature of cyber threats, the study assumes the positio
 
 Below is the **Logical Architecture Diagram** illustrating the interactions between components across multiple cloud platforms:
 
-![LogicalArchitectureDiagram1](https://github.com/user-attachments/assets/0db38887-1b49-41eb-808a-0312c000a22a)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0db38887-1b49-41eb-808a-0312c000a22a" alt="Logical Architecture Diagram">
+</div>
 
 #### Key Highlights:
 1. **Data Processing on AWS:** Encrypted data from MariaDB is preprocessed and distributed securely to other cloud environments.
@@ -88,8 +90,9 @@ Below is the **Logical Architecture Diagram** illustrating the interactions betw
 
 ### **Key Management System**
 
-![KeyGenerationDiagram](https://github.com/user-attachments/assets/fe9b84da-a225-4ff4-9ef9-5145e6ddc33b)
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/fe9b84da-a225-4ff4-9ef9-5145e6ddc33b" alt="Key Management System Diagram">
+</div>
 
 The **Key Management System (KMS)** ensures robust encryption key handling:
 - **Public Key Distribution:** Securely shared across AWS and Azure for encryption.
