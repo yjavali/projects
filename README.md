@@ -29,8 +29,7 @@ This repository reflects my dedication to continuous learning, innovation, and p
 Below is a list of projects I have completed in reverse chronological order. Each project links to a markdown file containing its details and the embedded link to the full documentation.
 
 - [**Enhancing Data Privacy in Ecommerce Applications through Homomorphic Encryption in a Multi-Cloud Environment**](./details/enhancing_data_privacy_in_ecommerce.md)
-- [**Enterprise Security Architecture for Customer Support Centre**](./details/enterprise_security_architecture_for_customer_support.md)
-- [**Implementing a Defense-in-Depth Cybersecurity Strategy for Smart Grid AMI**](./details/defense_in_depth_cybersecurity_smart_grid.md)
+- [**Designing and Implementing a Comprehensive Cybersecurity Framework for Smart Grids**](./details/comprehensive-cybersecurity-framework-smart-grids.md)
 - [**Cryptographic Security Implementation for Protected Healthcare Data**](./details/cryptographic_security_healthcare_data.md)
 - [**Evaluating SIM Swap Vulnerabilities and Proposing a Usability-Security Investigation in MFA Systems**](./details/sim_swap_vulnerabilities_mfa.md)
 - [**Risk Analysis and Mitigation for IoMT Devices in Healthcare**](./details/risk_analysis_mitigation_iomt_healthcare.md)
@@ -59,8 +58,7 @@ Each project is documented in its respective markdown file in the `details/` dir
 |-- LICENSE.md             # Licensing information
 |-- details/              # Folder containing project details
     |-- enhancing_data_privacy_in_ecommerce.md
-    |-- enterprise_security_architecture_for_customer_support.md
-    |-- defense_in_depth_cybersecurity_smart_grid.md
+    |-- comprehensive-cybersecurity-framework-smart-grids.md
     |-- cryptographic_security_healthcare_data.md
     |-- sim_swap_vulnerabilities_mfa.md
     |-- risk_analysis_mitigation_iomt_healthcare.md
